@@ -14,7 +14,7 @@ Humano é mutante baseado em sua sequência de DNA.
 ## Tecnologias
 - AWS API Gateway
 - AWS Lambda
-- AWS DynamboDB
+- AWS DynamoDB
 - AWS CloudWatch 
 
 ## URL API 
