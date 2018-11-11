@@ -34,9 +34,9 @@ Response:
   200 OK
 
 Request body (Exemplo DNA Humano):
-```json
+  ```json
   {"dna":["AATACT", "CCCAGA", "GGGATT", "AATTCC", "AGAGCG", "TCACTG"]}
-  ```
+```
 Response:
   403 Forbidden
 
