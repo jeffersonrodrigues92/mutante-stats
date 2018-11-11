@@ -9,7 +9,7 @@ Humano é mutante baseado em sua sequência de DNA.
 
 - Ambiente desenvolvido na linguagem Java
 - 100% serverless
-- Alta disponibilidade
+- Altamente disponível
 
 ## Tecnologias
 - AWS API Gateway
@@ -40,7 +40,10 @@ Request body (Exemplo DNA Humano):
 Response Status:
   403 Forbidden
 
+## Swagger
 
+- Caso tenha dúvidas acesse o Swagger para verififcar todos os serviços disponíveis
+- Swagger https://s3.amazonaws.com/mercado-livre-mutante-swagger/mutant-prd-swagger.json
 
 
 
