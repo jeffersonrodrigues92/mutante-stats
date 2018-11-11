@@ -36,7 +36,6 @@ public class MutantStatsRepository {
 
     @SuppressWarnings("deprecation")
     public void initDynamoDbClient() {
-        //BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIAIST23T4Y5V6SV4LA", "W2GTNNswdFHafLk4dM5m/n5uOYl26Gnuo0JcN6Yw");
         this.amazonDynamoDb = AmazonDynamoDBClientBuilder.standard().withRegion(REGION).build();
 
     }
