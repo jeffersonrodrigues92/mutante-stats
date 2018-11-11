@@ -1,3 +1,7 @@
+.DS_Store
+.classpath
+.project
+.settings/
 .idea/
 mutant-stats.iml
-/target
+target/
