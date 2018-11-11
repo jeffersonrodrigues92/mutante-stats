@@ -7,6 +7,7 @@ Humano é mutante baseado em sua sequência de DNA.
 
 ## SOBRE O AMBIENTE
 
+- Nesse repositório você encontrará o código fonte da função lambda Mutant.
 - Ambiente desenvolvido na linguagem Java
 - 100% serverless
 - Altamente disponível
