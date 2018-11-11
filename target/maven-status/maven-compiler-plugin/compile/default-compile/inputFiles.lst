@@ -1,3 +1,7 @@
 /Users/jeffersonrodrigues/Documents/workspace_studies/mutant-mercado-livre/src/main/java/br/com/mercadolivre/mutant/handler/MutantPostHandler.java
-/Users/jeffersonrodrigues/Documents/workspace_studies/mutant-mercado-livre/src/main/java/br/com/mercadolivre/mutant/request/MutantRequest.java
+/Users/jeffersonrodrigues/Documents/workspace_studies/mutant-mercado-livre/src/main/java/br/com/mercadolivre/mutant/repository/MutantRepository.java
+/Users/jeffersonrodrigues/Documents/workspace_studies/mutant-mercado-livre/src/main/java/br/com/mercadolivre/mutant/utils/Utils.java
+/Users/jeffersonrodrigues/Documents/workspace_studies/mutant-mercado-livre/src/main/java/br/com/mercadolivre/mutant/service/MutantService.java
+/Users/jeffersonrodrigues/Documents/workspace_studies/mutant-mercado-livre/src/main/java/br/com/mercadolivre/mutant/exception/MutantException.java
 /Users/jeffersonrodrigues/Documents/workspace_studies/mutant-mercado-livre/src/main/java/br/com/mercadolivre/mutant/response/MutantResponse.java
+/Users/jeffersonrodrigues/Documents/workspace_studies/mutant-mercado-livre/src/main/java/br/com/mercadolivre/mutant/request/DNABean.java

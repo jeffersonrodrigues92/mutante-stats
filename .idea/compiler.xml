@@ -9,5 +9,8 @@
         <module name="mutant" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mutant (1) (com.ml)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
