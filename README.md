@@ -1,11 +1,11 @@
-## MUTANTE - Mercado Livre
+## MUTANTE - MERCADO LIVRE
 
 Magneto quer recrutar tantos mutantes quanto possível para lutar contra os X-Men.
 
 Ele contratou você para desenvolver um projeto que detecta se um
 Humano é mutante baseado em sua sequência de DNA.
 
-## Sobre o Ambiente
+## SOBRE O AMBIENTE
 
 - Ambiente desenvolvido na linguagem Java
 - 100% serverless
@@ -40,7 +40,7 @@ Request body (Exemplo DNA Humano):
 Response Status:
   403 Forbidden
 
-## Swagger
+## SWAGGER
 
 - Caso tenha dúvidas acesse o Swagger para verififcar todos os serviços disponíveis
 - Swagger https://s3.amazonaws.com/mercado-livre-mutante-swagger/mutant-prd-swagger.json
