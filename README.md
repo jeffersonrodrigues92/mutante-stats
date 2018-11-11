@@ -12,6 +12,7 @@ Humano é mutante baseado em sua sequência de DNA.
 - Altamente disponível
 
 ## TECNOLOGIAS
+- Java 8
 - AWS API Gateway
 - AWS Lambda
 - AWS DynamoDB
