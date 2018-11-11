@@ -36,6 +36,7 @@ Request body (Exemplo DNA Mutante):
 Response Status:
   200 OK
 
+POST /mutant
 Request body (Exemplo DNA Humano):
   ```json
   {"dna":["AATACT", "CCCAGA", "GGGATT", "AATTCC", "AGAGCG", "TCACTG"]}
