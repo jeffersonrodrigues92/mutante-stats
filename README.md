@@ -30,14 +30,14 @@ Request body (Exemplo DNA Mutante):
   ```json
   {"dna":["ATGCGA", "CAGGGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]}
 ```
-Response:
+Response Status:
   200 OK
 
 Request body (Exemplo DNA Humano):
   ```json
   {"dna":["AATACT", "CCCAGA", "GGGATT", "AATTCC", "AGAGCG", "TCACTG"]}
 ```
-Response:
+Response Status:
   403 Forbidden
 
 
