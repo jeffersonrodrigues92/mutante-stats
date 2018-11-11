@@ -51,5 +51,7 @@ Response Status:
 - Caso tenha dúvidas acesse o Swagger para verififcar todos os serviços disponíveis
 - Swagger https://s3.amazonaws.com/mercado-livre-mutante-swagger/mutant-prd-swagger.json
 
+## Desenvolvedor
+Jefferson Rodrigues
 
 
