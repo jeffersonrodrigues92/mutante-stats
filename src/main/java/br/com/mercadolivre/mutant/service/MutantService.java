@@ -47,10 +47,5 @@ public class MutantService {
         new MutantRepository().persistData(dnaBean);
         return false;
     }
-
-
-
-
-
 }
 
