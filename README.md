@@ -11,7 +11,7 @@ Humano é mutante baseado em sua sequência de DNA.
 - 100% serverless
 - Altamente disponível
 
-## Tecnologias
+## TECNOLOGIAS
 - AWS API Gateway
 - AWS Lambda
 - AWS DynamoDB
