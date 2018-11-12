@@ -35,6 +35,7 @@ Verifica DNA Mutante e persiste os dados.
 Request:
 
 POST - /mutant
+
 Request body (Exemplo DNA Mutante):
   ```json
   {"dna":["ATGCGA", "CAGGGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]}
@@ -42,11 +43,8 @@ Request body (Exemplo DNA Mutante):
 Response Status:
   200 OK
 
-<<<<<<< HEAD
-POST -  /mutant
-=======
 POST - /mutant
->>>>>>> b26bea3a80977ece471ca98ce8d47748e9cfc768
+
 Request body (Exemplo DNA Humano):
   ```json
   {"dna":["AATACT", "CCCAGA", "GGGATT", "AATTCC", "AGAGCG", "TCACTG"]}
