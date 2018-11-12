@@ -38,7 +38,7 @@ GET - /stats
 
 Response (Exemplo DN Mutante):
   ```json
-  {“countMutantDna”:40, “countHumanDna”:100: “ratio”:0.4}
+{“countMutantDna”:40, “countHumanDna”:100: “ratio”:0.4}
 ```
 Response Status:
   200 OK
