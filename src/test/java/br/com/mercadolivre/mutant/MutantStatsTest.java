@@ -1,7 +1,6 @@
 package br.com.mercadolivre.mutant;
 
 import br.com.mercadolivre.mutantstas.entity.DNAEntity;
-import br.com.mercadolivre.mutantstas.repository.MutantStatsRepository;
 import br.com.mercadolivre.mutantstas.response.MutantStatsResponse;
 import br.com.mercadolivre.mutantstas.service.MutantStatsService;
 import org.junit.Before;

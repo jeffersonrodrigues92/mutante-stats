@@ -4,7 +4,6 @@ import br.com.mercadolivre.mutantstas.entity.DNAEntity;
 import br.com.mercadolivre.mutantstas.repository.MutantStatsRepository;
 import br.com.mercadolivre.mutantstas.response.MutantStatsResponse;
 
-import java.text.DecimalFormat;
 import java.util.List;
 
 public class MutantStatsService {
