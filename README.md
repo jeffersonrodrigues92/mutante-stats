@@ -7,10 +7,12 @@ Humano é mutante baseado em sua sequência de DNA.
 
 ## SOBRE O AMBIENTE
 
-- Nesse repositório você encontrará o código fonte da função lambda Mutant.
-- Ambiente desenvolvido na linguagem Java
-- 100% serverless
-- Altamente disponível
+- Ambiente foi desenvolvido em duas funções AWS Lambda, sendo uma função chamada Mutante (verifica se é mutante e salva no banco de dados) e a segunda função chamada Mutante Stats que representa o retorno do objeto quantidade de humanos, mutantes e o ratio. 
+
+- Ambiente 100% serverless.
+- Escabilidade Contínua, sem provisionar ou gerenciar servidores.
+- Monitorado via CloudWatch (Dashboard construído na AWS).
+- Altamente perfomático com a média de response time de 137ms para busca.
 
 ## TECNOLOGIAS
 - Java 8
@@ -19,6 +21,8 @@ Humano é mutante baseado em sua sequência de DNA.
 - AWS DynamoDB
 - AWS S3
 - AWS CloudWatch 
+- JUnit
+- Mockito
 
 ## URL API 
 
@@ -30,7 +34,7 @@ Verifica DNA Mutante e persiste os dados.
 
 Request:
 
-POST /mutant
+POST - /mutant
 Request body (Exemplo DNA Mutante):
   ```json
   {"dna":["ATGCGA", "CAGGGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]}
@@ -38,7 +42,7 @@ Request body (Exemplo DNA Mutante):
 Response Status:
   200 OK
 
-POST /mutant
+POST -  /mutant
 Request body (Exemplo DNA Humano):
   ```json
   {"dna":["AATACT", "CCCAGA", "GGGATT", "AATTCC", "AGAGCG", "TCACTG"]}
