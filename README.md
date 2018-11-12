@@ -7,7 +7,7 @@ Humano é mutante baseado em sua sequência de DNA.
 
 ## SOBRE O AMBIENTE
 
-- Ambiente foi desenvolvido duas funções AWS Lambda, sendo uma função chamada Mutante (verifica se é mutante e salva no banco de dados) e a segunda função chamada Mutante Stats que representa o retorno do objeto quantidade de humanos, mutantes e o ratio. 
+- Ambiente foi desenvolvido em duas funções AWS Lambda, sendo uma função chamada Mutante (verifica se é mutante e salva no banco de dados) e a segunda função chamada Mutante Stats que representa o retorno do objeto quantidade de humanos, mutantes e o ratio. 
 
 - Ambiente 100% serverless.
 - Escabilidade Contínua, sem provisionar ou gerenciar servidores.
