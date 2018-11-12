@@ -2,31 +2,42 @@ package br.com.mercadolivre.mutantstas.response;
 
 public class MutantStatsResponse {
 
-	private Double countMutantDna;
-	private Double countHumanDna;
+	private Integer countMutantDna;
+	private Integer countHumanDna;
 	private Double ratio;
 
-    public Double getCountMutantDna() {
+
+	public MutantStatsResponse(){
+
+    }
+
+    public MutantStatsResponse(Integer countHumanDna, Integer countMutantDna, Double ratio){
+	    this.countHumanDna = countHumanDna;
+	    this.countMutantDna = countMutantDna;
+	    this.ratio = ratio;
+    }
+
+    public Integer getCountMutantDna() {
         return countMutantDna;
     }
 
-    public void setCountMutantDna(Double countMutantDna) {
+    public void setCountMutantDna(Integer countMutantDna) {
         this.countMutantDna = countMutantDna;
     }
 
-    public Double getCountHumanDna() {
+    public Integer getCountHumanDna() {
         return countHumanDna;
     }
 
-    public void setCountHumanDna(Double countHumanDna) {
+    public void setCountHumanDna(Integer countHumanDna) {
         this.countHumanDna = countHumanDna;
     }
 
     public Double getRatio() {
-		return ratio;
-	}
+        return ratio;
+    }
 
-	public void setRatio(Double ratio) {
-		this.ratio = ratio;
-	}
+    public void setRatio(Double ratio) {
+        this.ratio = ratio;
+    }
 }

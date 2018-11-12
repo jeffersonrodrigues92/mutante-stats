@@ -11,12 +11,10 @@ public class MutantStatsService {
 
     public MutantStatsResponse findAll(){
 
-        Double mutants = 0.0;
-        Double humans = 0.0;
+        Integer mutants = 0;
+        Integer humans = 0;
 
         MutantStatsResponse mutantStatsResponse = new MutantStatsResponse();
-        DecimalFormat df = new DecimalFormat("#.##");
-
 
         List<DNAEntity> response = new MutantStatsRepository().findAll();
 
@@ -29,9 +27,7 @@ public class MutantStatsService {
 
         mutantStatsResponse.setCountHumanDna(humans);
         mutantStatsResponse.setCountMutantDna(mutants);
-
-        String ratioFormatted =  df.format(mutants / humans);
-        mutantStatsResponse.setRatio(Double.parseDouble(ratioFormatted));
+        mutantStatsResponse.setRatio(new Double(mutants.doubleValue() / humans.doubleValue()));
 
         return mutantStatsResponse;
     }
