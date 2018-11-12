@@ -34,12 +34,15 @@ Verifica DNA Mutante e persiste os dados.
 
 Request:
 
-GET - /stats
+GET /stats
 
-Response (Exemplo DN Mutante):
-  ```json
-{“countMutantDna”:40, “countHumanDna”:100: “ratio”:0.4}
-```
+Response: 200 (application/json)
+```json
+{
+    "countMutantDna": 5,
+    "countHumanDna": 10,
+    "ratio": 0.5
+}
 Response Status:
   200 OK
 
