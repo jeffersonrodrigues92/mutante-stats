@@ -34,23 +34,14 @@ Verifica DNA Mutante e persiste os dados.
 
 Request:
 
-POST - /mutant
+GET - /stats
 
-Request body (Exemplo DNA Mutante):
+Response (Exemplo DN Mutante):
   ```json
-  {"dna":["ATGCGA", "CAGGGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]}
+  {“countMutantDna”:40, “countHumanDna”:100: “ratio”:0.4}
 ```
 Response Status:
   200 OK
-
-POST - /mutant
-
-Request body (Exemplo DNA Humano):
-  ```json
-  {"dna":["AATACT", "CCCAGA", "GGGATT", "AATTCC", "AGAGCG", "TCACTG"]}
-```
-Response Status:
-  403 Forbidden
 
 ## SWAGGER
 
