@@ -7,11 +7,12 @@ Humano é mutante baseado em sua sequência de DNA.
 
 ## SOBRE O AMBIENTE
 
-- Foi desenvolvido duas funções AWS Lambda, a função Mutante (verifica se é
- mutante e salva no banco de dados) e a função Mutante Stats que a quantidade de humanos, mutantes e o ratio. 
-- Ambiente desenvolvido na linguagem Java
-- 100% serverless
-- Altamente disponível
+- Foi desenvolvido duas funções AWS Lambda, sendo uma função chamada Mutante (verifica se é mutante e salva no banco de dados) e a segunda função chamada Mutante Stats que representa o retorno do objeto quantidade de humanos, mutantes e o ratio. 
+
+- Ambiente 100% serverless.
+- Escabilidade Contínua, sem provisionar ou gerenciar servidores.
+- Monitorado via CloudWatch (Dashboard construído na AWS).
+- Altamente perfomático.
 
 ## TECNOLOGIAS
 - Java 8
@@ -33,7 +34,7 @@ Verifica DNA Mutante e persiste os dados.
 
 Request:
 
-POST /mutant
+POST - /mutant
 Request body (Exemplo DNA Mutante):
   ```json
   {"dna":["ATGCGA", "CAGGGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]}
@@ -41,7 +42,7 @@ Request body (Exemplo DNA Mutante):
 Response Status:
   200 OK
 
-POST /mutant
+POST - /mutant
 Request body (Exemplo DNA Humano):
   ```json
   {"dna":["AATACT", "CCCAGA", "GGGATT", "AATTCC", "AGAGCG", "TCACTG"]}
@@ -56,5 +57,8 @@ Response Status:
 
 ## Desenvolvedor
 Jefferson Rodrigues
+
+## Linkedin
+https://www.linkedin.com/in/jefferson-nascimento-rodrigues/
 
 
