@@ -42,7 +42,8 @@ Response: 200 (application/json)
     "countMutantDna": 5,
     "countHumanDna": 10,
     "ratio": 0.5
-}
+}```
+
 Response Status:
   200 OK
 
