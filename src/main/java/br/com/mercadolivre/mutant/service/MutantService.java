@@ -9,6 +9,12 @@ import java.util.ArrayList;
 public class MutantService {
 
 
+    public static void main (String[] args){
+        String[] dna= {"AAAAGT", "CCCCGA", "GGGATT", "AATTCC", "AGAGCG", "TCACTG"};
+        Boolean flag =  new MutantService().isMutant(dna);
+        System.out.println(flag);
+    }
+
     public Boolean isMutant(String[] dna) {
 
         ArrayList<String> dnaToValidate = new ArrayList<>();
@@ -40,11 +46,11 @@ public class MutantService {
             DNABean dnaBean = Utils.verifyDNA(dnaToValidate);
 
         if(dnaBean.getIstMutant()) {
-            new MutantRepository().persistData(dnaBean);
+            new MutantRepository().save(dnaBean);
             return true;
         }
 
-        new MutantRepository().persistData(dnaBean);
+        new MutantRepository().save(dnaBean);
         return false;
     }
 }
