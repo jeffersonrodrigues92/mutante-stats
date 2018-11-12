@@ -1,6 +1,7 @@
 package br.com.mercadolivre.mutant;
 
-import br.com.mercadolivre.mutant.service.MutantService;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,7 +9,7 @@ import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import static org.junit.Assert.assertEquals;
+import br.com.mercadolivre.mutant.service.MutantServiceTest;
 
 @RunWith(MockitoJUnitRunner.class)
 public class MutantTest {
@@ -19,7 +20,7 @@ public class MutantTest {
     private final String[] humanDna = {"WWQQQW", "DDFFFD", "LLXXXL", "SSVSVV", "HHJJJH", "PPOPPP"};
 
     @InjectMocks
-    private MutantService service;
+    private MutantServiceTest service;
 
     @Before
     public void setUp() {
@@ -45,8 +46,9 @@ public class MutantTest {
     }
 
     @Test
-    public void isHuman() {
+    public void verifyIsHuman() {
         Boolean isHuman = service.isMutant(humanDna);
         assertEquals(isHuman , false);
     }
+    
 }

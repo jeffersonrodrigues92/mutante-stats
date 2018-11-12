@@ -1,12 +1,11 @@
 package br.com.mercadolivre.mutant.service;
 
-import br.com.mercadolivre.mutant.repository.MutantRepository;
+import java.util.ArrayList;
+
 import br.com.mercadolivre.mutant.request.DNARequest;
 import br.com.mercadolivre.mutant.utils.Utils;
 
-import java.util.ArrayList;
-
-public class MutantService {
+public class MutantServiceTest {
 
     public Boolean isMutant(String[] dna) {
 
@@ -30,15 +29,13 @@ public class MutantService {
                         diagonal = diagonal + dna[i].charAt(i + j);
                     }
                 }
-
+                
                 dnaToValidate.add(horizontal);
                 dnaToValidate.add(vertical);
                 dnaToValidate.add(diagonal);
             }
 
         DNARequest dnaBean = Utils.verifyDNA(dnaToValidate);
-
-        new MutantRepository().save(dnaBean);
 
         if(dnaBean.getIstMutant()) {
             return true;

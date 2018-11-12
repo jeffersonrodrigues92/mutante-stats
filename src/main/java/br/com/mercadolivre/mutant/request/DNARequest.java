@@ -1,13 +1,13 @@
 package br.com.mercadolivre.mutant.request;
 
-public class DNABean {
+public class DNARequest {
 
 	private Long id;
 	private String dna;
     private Boolean isMutant;
 
 
-    public DNABean(Boolean isMutant, String dna){
+    public DNARequest(Boolean isMutant, String dna){
         this.isMutant = isMutant;
         this.dna = dna;
     }
