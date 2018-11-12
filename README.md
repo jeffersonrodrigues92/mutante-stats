@@ -37,13 +37,14 @@ Request:
 GET /stats
 
 Response: 200 (application/json)
+
 ```json
 {
-    "countMutantDna": 5,
-    "countHumanDna": 10,
-    "ratio": 0.5
-}```
-
+    "count_mutant_dna": 3,
+    "count_human_dna": 2,
+    "ratio": 1.5
+}
+```
 Response Status:
   200 OK
 
