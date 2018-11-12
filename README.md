@@ -7,7 +7,8 @@ Humano é mutante baseado em sua sequência de DNA.
 
 ## SOBRE O AMBIENTE
 
-- Nesse repositório você encontrará o código fonte da função lambda Mutant.
+- Foi desenvolvido duas funções AWS Lambda, a função Mutante (verifica se é
+ mutante e salva no banco de dados) e a função Mutante Stats que a quantidade de humanos, mutantes e o ratio. 
 - Ambiente desenvolvido na linguagem Java
 - 100% serverless
 - Altamente disponível
@@ -19,6 +20,8 @@ Humano é mutante baseado em sua sequência de DNA.
 - AWS DynamoDB
 - AWS S3
 - AWS CloudWatch 
+- JUnit
+- Mockito
 
 ## URL API 
 
