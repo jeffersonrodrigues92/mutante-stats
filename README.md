@@ -42,7 +42,11 @@ Request body (Exemplo DNA Mutante):
 Response Status:
   200 OK
 
+<<<<<<< HEAD
 POST -  /mutant
+=======
+POST - /mutant
+>>>>>>> b26bea3a80977ece471ca98ce8d47748e9cfc768
 Request body (Exemplo DNA Humano):
   ```json
   {"dna":["AATACT", "CCCAGA", "GGGATT", "AATTCC", "AGAGCG", "TCACTG"]}
@@ -57,5 +61,8 @@ Response Status:
 
 ## Desenvolvedor
 Jefferson Rodrigues
+
+## LinkedIn
+https://www.linkedin.com/in/jefferson-nascimento-rodrigues/
 
 
