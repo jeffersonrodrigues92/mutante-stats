@@ -40,8 +40,8 @@ Response: 200 (application/json)
 
 ```json
 {
-    "count_mutant_dna": 10,
-    "count_human_dna": 20,
+    "countMutantDna": 10,
+    "countHumanDna": 20,
     "ratio": 0.5
 }
 ```
