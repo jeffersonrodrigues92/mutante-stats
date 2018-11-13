@@ -4,10 +4,16 @@ import br.com.mercadolivre.mutantstas.entity.DNAEntity;
 import br.com.mercadolivre.mutantstas.repository.MutantStatsRepository;
 import br.com.mercadolivre.mutantstas.response.MutantStatsResponse;
 
+import java.text.DecimalFormat;
 import java.util.List;
-import java.util.Objects;
 
 public class MutantStatsService {
+
+
+    public void main (String [] args){
+        String[] horizontal = {"GGGGTA", "TTTAAA", "CCAATT", "AGAGCG", "AATTCC", "CTGTCA"};
+        new MutantStatsService().findAll();
+    }
 
     public MutantStatsResponse findAll(){
 
@@ -15,6 +21,7 @@ public class MutantStatsService {
         Integer humans = 0;
 
         MutantStatsResponse mutantStatsResponse = new MutantStatsResponse();
+        DecimalFormat df = new DecimalFormat("#.##");
 
         List<DNAEntity> response = new MutantStatsRepository().findAll();
 
@@ -29,7 +36,10 @@ public class MutantStatsService {
         mutantStatsResponse.setCountMutantDna(mutants);
 
         if(humans != 0 && mutants != 0) {
-            mutantStatsResponse.setRatio(new Double(mutants.doubleValue() / humans.doubleValue()));
+            String ratio = df.format(new Double(mutants.doubleValue() / humans.doubleValue()));
+            mutantStatsResponse.setRatio(Double.parseDouble(ratio.replace(",",".")));
+        }else{
+            mutantStatsResponse.setRatio(0.0);
         }
 
         return mutantStatsResponse;
