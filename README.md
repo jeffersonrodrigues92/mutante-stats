@@ -30,7 +30,7 @@ AWS API Gateway: https://zvgr0hmrr1.execute-api.us-east-1.amazonaws.com/prd/
 
 ## SERVIÇO
 
-Verifica DNA Mutante e persiste os dados.
+Buscar estatísticas.
 
 Request:
 
