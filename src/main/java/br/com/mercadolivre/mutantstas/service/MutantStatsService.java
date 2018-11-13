@@ -5,6 +5,7 @@ import br.com.mercadolivre.mutantstas.repository.MutantStatsRepository;
 import br.com.mercadolivre.mutantstas.response.MutantStatsResponse;
 
 import java.util.List;
+import java.util.Objects;
 
 public class MutantStatsService {
 
@@ -26,7 +27,10 @@ public class MutantStatsService {
 
         mutantStatsResponse.setCountHumanDna(humans);
         mutantStatsResponse.setCountMutantDna(mutants);
-        mutantStatsResponse.setRatio(new Double(mutants.doubleValue() / humans.doubleValue()));
+
+        if(humans != 0 && mutants != 0) {
+            mutantStatsResponse.setRatio(new Double(mutants.doubleValue() / humans.doubleValue()));
+        }
 
         return mutantStatsResponse;
     }
